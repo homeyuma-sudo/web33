@@ -47,6 +47,7 @@ export const Footer = () => (
             "Arsel Biro Sambeko",
             "Ahmad Fauzan",
             "Emmanuel Chandra Soisarah",
+            "Muh. Naufal Alamzah",
           ].map((nama) => (
             <li
               key={nama}
