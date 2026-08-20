@@ -30,6 +30,34 @@ export const Footer = () => (
           </p>
         </div>
       </div>
+
+      <div
+        data-testid="team-credits"
+        className="mt-12 rounded-3xl border border-white/15 bg-white/5 p-8"
+      >
+        <p className="text-sm uppercase tracking-widest text-[#E5A93D]">
+          Anggota Kelompok C#
+        </p>
+        <ul className="mt-5 grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            "Lionel Dave Febrianto",
+            "Gabriel Arvinsyah Setiawan",
+            "Muh. Yuma Abdan Syakur",
+            "Bisma Pratama",
+            "Arsel Biro Sambeko",
+            "Ahmad Fauzan",
+            "Emmanuel Chandra Soisarah",
+          ].map((nama) => (
+            <li
+              key={nama}
+              className="flex items-center gap-3 text-[15px] font-medium text-white"
+            >
+              <span className="h-1.5 w-1.5 flex-none rounded-full bg-[#E5A93D]" />
+              {nama}
+            </li>
+          ))}
+        </ul>
+      </div>
       <div className="mt-10 border-t border-white/15 pt-6 text-xs text-[#E9EED9]/70">
         © {new Date().getFullYear()} Nano Fruits Pedia · Dibuat oleh C# Group.
         Seluruh informasi disusun untuk tujuan edukasi.

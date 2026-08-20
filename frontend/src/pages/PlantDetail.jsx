@@ -18,10 +18,10 @@ const iconMap = { Sun, Droplets, Sprout, Scissors, CalendarDays };
 
 const SectionTitle = ({ icon: Icon, children }) => (
   <div className="mb-5 flex items-center gap-3">
-    <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#E9EED9] text-[#2C5E3B]">
+    <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#E9EED9] text-[#2C5E3B] dark:bg-[#243021] dark:text-[#8FCB7E]">
       <Icon className="h-5 w-5" />
     </span>
-    <h2 className="font-heading text-2xl font-semibold text-[#1E2923] md:text-3xl">
+    <h2 className="font-heading text-2xl font-semibold text-[#1E2923] dark:text-[#EDF1E6] md:text-3xl">
       {children}
     </h2>
   </div>
@@ -42,10 +42,10 @@ export default function PlantDetail() {
         data-testid="notfound-page"
         className="mx-auto flex max-w-3xl flex-col items-center px-6 py-32 text-center"
       >
-        <h1 className="font-heading text-4xl font-semibold text-[#1E2923]">
+        <h1 className="font-heading text-4xl font-semibold text-[#1E2923] dark:text-[#EDF1E6]">
           Tanaman tidak ditemukan
         </h1>
-        <p className="mt-3 text-[#5C6B61]">
+        <p className="mt-3 text-[#5C6B61] dark:text-[#A2AE9F]">
           Maaf, halaman yang Anda cari tidak tersedia.
         </p>
         <Link
@@ -115,7 +115,7 @@ export default function PlantDetail() {
               <SectionTitle icon={Salad}>Deskripsi Umum</SectionTitle>
               <div className="space-y-4">
                 {plant.deskripsi.map((par, i) => (
-                  <p key={i} className="text-base leading-relaxed text-[#3d4a41] md:text-lg">
+                  <p key={i} className="text-base leading-relaxed text-[#3d4a41] dark:text-[#C6D0C0] md:text-lg">
                     {par}
                   </p>
                 ))}
@@ -128,7 +128,7 @@ export default function PlantDetail() {
                 {plant.manfaat.map((m, i) => (
                   <li
                     key={i}
-                    className="flex gap-3 rounded-2xl border border-[#D5DCC4] bg-white p-4 text-sm leading-relaxed text-[#3d4a41]"
+                    className="flex gap-3 rounded-2xl border border-[#D5DCC4] bg-white p-4 text-sm leading-relaxed text-[#3d4a41] dark:border-[#2B3326] dark:bg-[#161C13] dark:text-[#C6D0C0]"
                   >
                     <span
                       className="mt-1.5 h-2 w-2 flex-none rounded-full"
@@ -148,14 +148,14 @@ export default function PlantDetail() {
                   return (
                     <div
                       key={i}
-                      className="flex items-start gap-4 rounded-2xl border border-[#D5DCC4] bg-white p-5"
+                      className="flex items-start gap-4 rounded-2xl border border-[#D5DCC4] bg-white p-5 dark:border-[#2B3326] dark:bg-[#161C13]"
                     >
-                      <span className="flex h-11 w-11 flex-none items-center justify-center rounded-xl bg-[#F0F2E9] text-[#2C5E3B]">
+                      <span className="flex h-11 w-11 flex-none items-center justify-center rounded-xl bg-[#F0F2E9] text-[#2C5E3B] dark:bg-[#20271D] dark:text-[#8FCB7E]">
                         <Icon className="h-5 w-5" />
                       </span>
                       <div>
-                        <h4 className="font-semibold text-[#1E2923]">{step.judul}</h4>
-                        <p className="mt-1 text-sm leading-relaxed text-[#5C6B61]">
+                        <h4 className="font-semibold text-[#1E2923] dark:text-[#EDF1E6]">{step.judul}</h4>
+                        <p className="mt-1 text-sm leading-relaxed text-[#5C6B61] dark:text-[#A2AE9F]">
                           {step.isi}
                         </p>
                       </div>
@@ -170,21 +170,21 @@ export default function PlantDetail() {
           <aside className="space-y-8 lg:sticky lg:top-24 lg:self-start">
             <div
               data-testid="section-klasifikasi"
-              className="rounded-3xl border border-[#D5DCC4] bg-white p-7"
+              className="rounded-3xl border border-[#D5DCC4] bg-white p-7 dark:border-[#2B3326] dark:bg-[#161C13]"
             >
               <div className="mb-5 flex items-center gap-3">
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#E9EED9] text-[#2C5E3B]">
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#E9EED9] text-[#2C5E3B] dark:bg-[#243021] dark:text-[#8FCB7E]">
                   <FlaskConical className="h-5 w-5" />
                 </span>
-                <h2 className="font-heading text-xl font-semibold text-[#1E2923]">
+                <h2 className="font-heading text-xl font-semibold text-[#1E2923] dark:text-[#EDF1E6]">
                   Klasifikasi Ilmiah
                 </h2>
               </div>
-              <dl className="divide-y divide-[#EDEFE4]">
+              <dl className="divide-y divide-[#EDEFE4] dark:divide-[#2B3326]">
                 {Object.entries(plant.klasifikasi).map(([k, v]) => (
                   <div key={k} className="flex items-center justify-between py-2.5 text-sm">
-                    <dt className="text-[#5C6B61]">{k}</dt>
-                    <dd className="text-right font-medium italic text-[#1E2923]">{v}</dd>
+                    <dt className="text-[#5C6B61] dark:text-[#A2AE9F]">{k}</dt>
+                    <dd className="text-right font-medium italic text-[#1E2923] dark:text-[#EDF1E6]">{v}</dd>
                   </div>
                 ))}
               </dl>
@@ -207,8 +207,8 @@ export default function PlantDetail() {
         </div>
 
         {/* TANAMAN LAINNYA */}
-        <section className="mt-20 border-t border-[#D5DCC4] pt-12" data-testid="section-lainnya">
-          <h2 className="mb-8 font-heading text-2xl font-semibold text-[#1E2923] md:text-3xl">
+        <section className="mt-20 border-t border-[#D5DCC4] pt-12 dark:border-[#2B3326]" data-testid="section-lainnya">
+          <h2 className="mb-8 font-heading text-2xl font-semibold text-[#1E2923] dark:text-[#EDF1E6] md:text-3xl">
             Jelajahi Lainnya
           </h2>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
@@ -217,7 +217,7 @@ export default function PlantDetail() {
                 key={p.slug}
                 to={`/tanaman/${p.slug}`}
                 data-testid={`related-${p.slug}`}
-                className="group flex items-center gap-4 rounded-2xl border border-[#D5DCC4] bg-white p-4 transition-transform duration-300 hover:-translate-y-1"
+                className="group flex items-center gap-4 rounded-2xl border border-[#D5DCC4] bg-white p-4 transition-transform duration-300 hover:-translate-y-1 dark:border-[#2B3326] dark:bg-[#161C13]"
               >
                 <img
                   src={p.image}
@@ -226,8 +226,8 @@ export default function PlantDetail() {
                   className="h-16 w-16 flex-none rounded-xl object-cover"
                 />
                 <div>
-                  <h4 className="font-semibold text-[#1E2923]">{p.nama}</h4>
-                  <p className="text-xs italic text-[#5C6B61]">{p.latin}</p>
+                  <h4 className="font-semibold text-[#1E2923] dark:text-[#EDF1E6]">{p.nama}</h4>
+                  <p className="text-xs italic text-[#5C6B61] dark:text-[#A2AE9F]">{p.latin}</p>
                 </div>
               </Link>
             ))}

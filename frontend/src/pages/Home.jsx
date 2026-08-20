@@ -17,17 +17,17 @@ export default function Home() {
           transition={{ duration: 0.6 }}
           className="max-w-3xl"
         >
-          <span className="inline-flex items-center gap-2 rounded-full border border-[#D5DCC4] bg-white/70 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#2C5E3B] backdrop-blur">
+          <span className="inline-flex items-center gap-2 rounded-full border border-[#D5DCC4] bg-white/70 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#2C5E3B] backdrop-blur dark:border-white/15 dark:bg-white/5 dark:text-[#8FCB7E]">
             <Sparkles className="h-3.5 w-3.5 text-[#E5A93D]" />
             Ensiklopedia Tanaman Tropis
           </span>
-          <h1 className="mt-6 font-heading text-5xl font-semibold leading-[1.02] tracking-tighter text-[#1E2923] md:text-7xl">
+          <h1 className="mt-6 font-heading text-5xl font-semibold leading-[1.02] tracking-tighter text-[#1E2923] dark:text-[#EDF1E6] md:text-7xl">
             Jelajahi kekayaan
-            <span className="text-[#2C5E3B]"> buah & tanaman </span>
+            <span className="text-[#2C5E3B] dark:text-[#8FCB7E]"> buah & tanaman </span>
             Nusantara
           </h1>
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-[#5C6B61] md:text-lg">
-            Selamat datang di <strong className="text-[#2C5E3B]">Nano Fruits Pedia</strong>.
+          <p className="mt-6 max-w-xl text-base leading-relaxed text-[#5C6B61] dark:text-[#A2AE9F] md:text-lg">
+            Selamat datang di <strong className="text-[#2C5E3B] dark:text-[#8FCB7E]">Nano Fruits Pedia</strong>.
             Pilih salah satu tanaman di lobby koleksi kami untuk membaca deskripsi,
             klasifikasi ilmiah, manfaat, hingga panduan penanaman secara lengkap.
           </p>
@@ -41,17 +41,17 @@ export default function Home() {
           </a>
         </motion.div>
 
-        <div className="mt-12 flex flex-wrap gap-x-10 gap-y-4 border-t border-[#D5DCC4] pt-8">
+        <div className="mt-12 flex flex-wrap gap-x-10 gap-y-4 border-t border-[#D5DCC4] pt-8 dark:border-[#2B3326]">
           {[
             { angka: "6", label: "Tanaman & Buah" },
             { angka: "100%", label: "Bahasa Indonesia" },
             { angka: "4", label: "Kategori Informasi" },
           ].map((s) => (
             <div key={s.label}>
-              <p className="font-heading text-4xl font-semibold text-[#2C5E3B]">
+              <p className="font-heading text-4xl font-semibold text-[#2C5E3B] dark:text-[#8FCB7E]">
                 {s.angka}
               </p>
-              <p className="text-sm text-[#5C6B61]">{s.label}</p>
+              <p className="text-sm text-[#5C6B61] dark:text-[#A2AE9F]">{s.label}</p>
             </div>
           ))}
         </div>
@@ -65,14 +65,14 @@ export default function Home() {
       >
         <div className="mb-10 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <div>
-            <h2 className="font-heading text-3xl font-semibold tracking-tight text-[#1E2923] md:text-5xl">
+            <h2 className="font-heading text-3xl font-semibold tracking-tight text-[#1E2923] dark:text-[#EDF1E6] md:text-5xl">
               Lobby Koleksi
             </h2>
-            <p className="mt-2 max-w-lg text-[#5C6B61]">
+            <p className="mt-2 max-w-lg text-[#5C6B61] dark:text-[#A2AE9F]">
               Ketuk salah satu kartu untuk membuka halaman informasi lengkapnya.
             </p>
           </div>
-          <span className="text-sm font-medium text-[#5C6B61]">
+          <span className="text-sm font-medium text-[#5C6B61] dark:text-[#A2AE9F]">
             {plants.length} entri tersedia
           </span>
         </div>

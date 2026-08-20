@@ -24,8 +24,7 @@ export const BackgroundEffect = () => {
   return (
     <div
       data-testid="background-effect"
-      className="pointer-events-none fixed inset-0 -z-10 overflow-hidden"
-      style={{ background: "#FDFBF7" }}
+      className="pointer-events-none fixed inset-0 -z-10 overflow-hidden bg-[#FDFBF7] dark:bg-[#0F130D]"
     >
       <motion.div style={{ y: y1, rotate: rot }} className="absolute -left-24 top-24">
         <Leaf className="h-80 w-80 opacity-[0.13]" color="#2C5E3B" />

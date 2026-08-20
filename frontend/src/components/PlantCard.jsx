@@ -13,7 +13,7 @@ export const PlantCard = ({ plant, index, wide }) => (
     <Link
       to={`/tanaman/${plant.slug}`}
       data-testid={`plant-card-${plant.slug}`}
-      className="group relative block h-full overflow-hidden rounded-3xl border border-[#D5DCC4] bg-white shadow-[0_10px_40px_-20px_rgba(30,41,35,0.35)] transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_24px_60px_-24px_rgba(30,41,35,0.5)]"
+      className="group relative block h-full overflow-hidden rounded-3xl border border-[#D5DCC4] bg-white shadow-[0_10px_40px_-20px_rgba(30,41,35,0.35)] transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_24px_60px_-24px_rgba(30,41,35,0.5)] dark:border-[#2B3326] dark:bg-[#161C13] dark:shadow-[0_10px_40px_-20px_rgba(0,0,0,0.6)]"
     >
       <div className={`overflow-hidden ${wide ? "h-64 md:h-80" : "h-56"}`}>
         <img
@@ -34,11 +34,11 @@ export const PlantCard = ({ plant, index, wide }) => (
               ? "Tanaman"
               : "Buah"}
           </span>
-          <h3 className="font-heading text-2xl font-semibold text-[#1E2923] md:text-3xl">
+          <h3 className="font-heading text-2xl font-semibold text-[#1E2923] dark:text-[#EDF1E6] md:text-3xl">
             {plant.nama}
           </h3>
-          <p className="mt-1 text-sm italic text-[#5C6B61]">{plant.latin}</p>
-          <p className="mt-3 text-sm leading-relaxed text-[#5C6B61]">
+          <p className="mt-1 text-sm italic text-[#5C6B61] dark:text-[#A2AE9F]">{plant.latin}</p>
+          <p className="mt-3 text-sm leading-relaxed text-[#5C6B61] dark:text-[#A2AE9F]">
             {plant.tagline}
           </p>
         </div>

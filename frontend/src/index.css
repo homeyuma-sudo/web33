@@ -11,6 +11,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: #FDFBF7;
     color: #1E2923;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark body {
+    background-color: #0F130D;
+    color: #EDF1E6;
 }
 
 .font-heading {
