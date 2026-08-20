@@ -38,6 +38,12 @@ export const Footer = () => (
         <p className="text-sm uppercase tracking-widest text-[#E5A93D]">
           Anggota Kelompok C#
         </p>
+        <p className="mt-1 font-heading text-2xl font-semibold text-white">
+          SMP Negeri 3 Makassar
+          <span className="ml-2 align-middle text-sm font-medium not-italic text-[#E9EED9]/70">
+            · Spentig Hybeast School
+          </span>
+        </p>
         <ul className="mt-5 grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2 lg:grid-cols-3">
           {[
             "Lionel Dave Febrianto",
