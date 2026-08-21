@@ -4,7 +4,7 @@ import { plants } from "../data/plants";
 import { PlantCard } from "../components/PlantCard";
 
 // Pola bento: kartu tertentu dibuat lebih lebar agar lobby terasa seperti galeri.
-const wideCards = new Set(["mangga", "lidah-buaya", "jambu-biji"]);
+const wideCards = new Set(["mangga", "lidah-buaya", "jambu-air"]);
 
 export default function Home() {
   return (
