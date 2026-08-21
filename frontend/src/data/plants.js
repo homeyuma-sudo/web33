@@ -10,6 +10,11 @@ export const plants = [
     aksen: "#E5A93D",
     image:
       "https://images.unsplash.com/photo-1680008702821-e1b598db30f3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwyfHxyaXBlJTIwbWFuZ28lMjBmcnVpdCUyMHRyZWV8ZW58MHx8fHwxNzg3MjIwNDMyfDA&ixlib=rb-4.1.0&q=85",
+    galeri: [
+      { url: "https://images.unsplash.com/photo-1680008702821-e1b598db30f3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwyfHxyaXBlJTIwbWFuZ28lMjBmcnVpdCUyMHRyZWV8ZW58MHx8fHwxNzg3MjIwNDMyfDA&ixlib=rb-4.1.0&q=85", caption: "Buah mangga muda di pohon" },
+      { url: "https://images.unsplash.com/photo-1705723115413-a0ec375ac414?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwxfHxyaXBlJTIwbWFuZ28lMjBmcnVpdCUyMHRyZWV8ZW58MHx8fHwxNzg3MjIwNDMyfDA&ixlib=rb-4.1.0&q=85", caption: "Mangga menjelang matang" },
+      { url: "https://images.unsplash.com/photo-1734163075572-8948e799e42c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwzfHxyaXBlJTIwbWFuZ28lMjBmcnVpdCUyMHRyZWV8ZW58MHx8fHwxNzg3MjIwNDMyfDA&ixlib=rb-4.1.0&q=85", caption: "Sepasang buah mangga" },
+    ],
     deskripsi: [
       "Mangga (Mangifera indica) adalah tanaman buah tahunan berbentuk pohon yang berasal dari kawasan Asia Selatan dan Asia Tenggara. Pohonnya dapat tumbuh tinggi hingga 10–40 meter dengan tajuk rimbun dan akar tunggang yang dalam, sehingga tergolong tanaman yang kuat dan berumur panjang.",
       "Buah mangga memiliki daging tebal, berair, dan rasa manis hingga manis-asam tergantung varietasnya. Warna kulit bervariasi dari hijau, kuning, hingga kemerahan ketika matang. Di Indonesia dikenal banyak varietas populer seperti Arumanis, Gedong Gincu, Manalagi, dan Golek yang menjadikan mangga sebagai salah satu buah favorit masyarakat.",
@@ -52,6 +57,11 @@ export const plants = [
     aksen: "#C9922B",
     image:
       "https://images.pexels.com/photos/11669555/pexels-photo-11669555.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    galeri: [
+      { url: "https://images.pexels.com/photos/11669555/pexels-photo-11669555.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", caption: "Buah nangka matang di pohon" },
+      { url: "https://images.unsplash.com/photo-1714040292671-14e9722d1a09?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxqYWNrZnJ1aXQlMjB0cmVlJTIwZnJ1aXR8ZW58MHx8fHwxNzg3MjIwNDMyfDA&ixlib=rb-4.1.0&q=85", caption: "Pohon nangka berbuah lebat" },
+      { url: "https://images.pexels.com/photos/13654840/pexels-photo-13654840.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", caption: "Nangka muda pada dahan" },
+    ],
     deskripsi: [
       "Nangka (Artocarpus heterophyllus) adalah pohon buah tropis yang termasuk dalam keluarga Moraceae. Tanaman ini menghasilkan buah majemuk terbesar di antara semua buah yang tumbuh di pohon, dengan bobot yang dapat mencapai 10–25 kilogram bahkan lebih.",
       "Daging buah (nyamplung) berwarna kuning keemasan, bertekstur kenyal, beraroma harum, dan terasa manis saat matang. Selain dimakan segar, nangka muda (tewel/gori) juga dimasak menjadi sayur seperti gudeg. Bijinya pun dapat direbus dan dikonsumsi karena kaya karbohidrat.",
@@ -94,6 +104,11 @@ export const plants = [
     aksen: "#E5B93D",
     image:
       "https://images.unsplash.com/photo-1752619828370-7c658dbda486?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwzfHxzdGFyZnJ1aXQlMjBiZWxpbWJpbmclMjBjYXJhbWJvbGF8ZW58MHx8fHwxNzg3MjIwNDMyfDA&ixlib=rb-4.1.0&q=85",
+    galeri: [
+      { url: "https://images.unsplash.com/photo-1752619828370-7c658dbda486?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwzfHxzdGFyZnJ1aXQlMjBiZWxpbWJpbmclMjBjYXJhbWJvbGF8ZW58MHx8fHwxNzg3MjIwNDMyfDA&ixlib=rb-4.1.0&q=85", caption: "Belimbing kuning matang" },
+      { url: "https://images.unsplash.com/photo-1780207368925-22be442d1a5b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwyfHxzdGFyZnJ1aXQlMjBiZWxpbWJpbmclMjBjYXJhbWJvbGF8ZW58MHx8fHwxNzg3MjIwNDMyfDA&ixlib=rb-4.1.0&q=85", caption: "Belimbing hijau di pohon" },
+      { url: "https://images.pexels.com/photos/16578264/pexels-photo-16578264.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", caption: "Penampang bintang khas belimbing" },
+    ],
     deskripsi: [
       "Belimbing manis (Averrhoa carambola) atau star fruit adalah buah tropis yang memiliki bentuk unik. Jika dipotong melintang, penampangnya menyerupai bintang berujung lima sehingga sangat populer sebagai hiasan hidangan dan minuman.",
       "Buahnya memiliki daging renyah, berair, dengan rasa manis-asam yang menyegarkan. Belimbing tumbuh pada pohon kecil hingga sedang dengan tinggi 5–12 meter. Berbeda dengan belimbing wuluh yang sangat asam, belimbing manis kerap dikonsumsi segar maupun dijadikan jus.",
@@ -136,6 +151,11 @@ export const plants = [
     aksen: "#4C8C4A",
     image:
       "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwxfHxhbG9lJTIwdmVyYSUyMHBsYW50fGVufDB8fHx8MTc4NzIyMDQzMnww&ixlib=rb-4.1.0&q=85",
+    galeri: [
+      { url: "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwxfHxhbG9lJTIwdmVyYSUyMHBsYW50fGVufDB8fHx8MTc4NzIyMDQzMnww&ixlib=rb-4.1.0&q=85", caption: "Lidah buaya dalam pot" },
+      { url: "https://images.unsplash.com/photo-1636687987347-06b9b7f60d68?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwzfHxhbG9lJTIwdmVyYSUyMHBsYW50fGVufDB8fHx8MTc4NzIyMDQzMnww&ixlib=rb-4.1.0&q=85", caption: "Daun tebal berdaging" },
+      { url: "https://images.pexels.com/photos/7408838/pexels-photo-7408838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", caption: "Lidah buaya di dekat jendela" },
+    ],
     deskripsi: [
       "Lidah buaya (Aloe vera) adalah tanaman sukulen yang termasuk keluarga Asphodelaceae. Tanaman ini memiliki daun tebal berdaging yang tersusun roset, berwarna hijau keabu-abuan, dengan tepi bergerigi lembut. Di dalam daunnya tersimpan gel bening yang menjadi bagian paling bernilai.",
       "Lidah buaya sangat mudah dibudidayakan karena tahan kekeringan dan tidak memerlukan banyak perawatan. Gelnya banyak dimanfaatkan untuk perawatan kulit, rambut, luka bakar ringan, hingga diolah menjadi minuman dan makanan sehat.",
@@ -178,6 +198,11 @@ export const plants = [
     aksen: "#7AA05A",
     image:
       "https://images.pexels.com/photos/28884216/pexels-photo-28884216.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    galeri: [
+      { url: "https://images.pexels.com/photos/28884216/pexels-photo-28884216.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", caption: "Jambu biji segar di pohon" },
+      { url: "https://images.unsplash.com/photo-1663315110779-ffaa2fde4f0b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwyfHxndWF2YSUyMGZydWl0JTIwdHJlZXxlbnwwfHx8fDE3ODcyMjA0MzJ8MA&ixlib=rb-4.1.0&q=85", caption: "Buah jambu pada dahan" },
+      { url: "https://images.pexels.com/photos/12985589/pexels-photo-12985589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", caption: "Jambu biji hijau bergelantungan" },
+    ],
     deskripsi: [
       "Jambu biji (Psidium guajava) adalah tanaman buah dari keluarga Myrtaceae yang berasal dari Amerika tropis dan kini tersebar luas di Indonesia. Pohonnya berukuran kecil hingga sedang dengan batang licin dan daun berbentuk lonjong yang khas.",
       "Buahnya memiliki daging berwarna putih atau merah muda dengan banyak biji kecil di bagian tengah. Rasanya manis dan sedikit asam dengan aroma harum yang kuat. Jambu biji, khususnya varietas merah, terkenal sebagai buah yang membantu meningkatkan trombosit dan sangat kaya vitamin C.",
@@ -220,6 +245,11 @@ export const plants = [
     aksen: "#5C8A3A",
     image:
       "https://images.unsplash.com/photo-1584843313763-e1a0e701dc68?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHwzfHxwYWxtJTIwdHJlZSUyMHRyb3BpY2FsJTIwb3JuYW1lbnRhbHxlbnwwfHx8fDE3ODcyMjA0MzJ8MA&ixlib=rb-4.1.0&q=85",
+    galeri: [
+      { url: "https://images.unsplash.com/photo-1584843313763-e1a0e701dc68?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHwzfHxwYWxtJTIwdHJlZSUyMHRyb3BpY2FsJTIwb3JuYW1lbnRhbHxlbnwwfHx8fDE3ODcyMjA0MzJ8MA&ixlib=rb-4.1.0&q=85", caption: "Palem putri di bawah langit cerah" },
+      { url: "https://images.unsplash.com/photo-1537395799810-9d64ef3d7227?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHwyfHxwYWxtJTIwdHJlZSUyMHRyb3BpY2FsJTIwb3JuYW1lbnRhbHxlbnwwfHx8fDE3ODcyMjA0MzJ8MA&ixlib=rb-4.1.0&q=85", caption: "Palem di antara pepohonan" },
+      { url: "https://images.unsplash.com/photo-1569171221811-1a3ab28649b3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHwxfHxwYWxtJTIwdHJlZSUyMHRyb3BpY2FsJTIwb3JuYW1lbnRhbHxlbnwwfHx8fDE3ODcyMjA0MzJ8MA&ixlib=rb-4.1.0&q=85", caption: "Mahkota daun menyirip yang anggun" },
+    ],
     deskripsi: [
       "Palem putri (Veitchia merrillii, sinonim Adonidia merrillii) adalah tanaman palem hias populer yang berasal dari Filipina. Tanaman ini memiliki batang tunggal ramping berwarna abu-abu dengan mahkota daun menyirip yang hijau mengkilap dan tampak anggun.",
       "Palem ini banyak dipakai sebagai tanaman lanskap di taman, tepi jalan, dan halaman rumah karena bentuknya rapi serta perawatannya mudah. Pada musimnya, palem putri menghasilkan buah kecil berwarna merah cerah yang menambah nilai estetika. Julukannya di beberapa daerah adalah 'Christmas Palm' karena buah merahnya.",

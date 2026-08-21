@@ -18,3 +18,17 @@
   background: #2C5E3B;
   border-radius: 8px;
 }
+
+@media print {
+  header[data-testid="site-header"],
+  footer[data-testid="site-footer"],
+  [data-testid="background-effect"],
+  [data-testid="action-toolbar"],
+  [data-testid="section-lainnya"] {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+}

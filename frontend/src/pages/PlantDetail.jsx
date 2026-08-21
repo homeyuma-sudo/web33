@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import { toast } from "sonner";
 import {
   ArrowLeft,
   Sun,
@@ -11,8 +12,12 @@ import {
   HeartPulse,
   FlaskConical,
   Salad,
+  Images,
+  Share2,
+  Printer,
 } from "lucide-react";
 import { getPlant, plants } from "../data/plants";
+import { Gallery } from "../components/Gallery";
 
 const iconMap = { Sun, Droplets, Sprout, Scissors, CalendarDays };
 
@@ -61,6 +66,27 @@ export default function PlantDetail() {
 
   const others = plants.filter((p) => p.slug !== plant.slug).slice(0, 3);
 
+  const handleShare = async () => {
+    const url = window.location.href;
+    const shareData = {
+      title: `${plant.nama} — Nano Fruits Pedia`,
+      text: `Baca info lengkap ${plant.nama} (${plant.latin}) di Nano Fruits Pedia`,
+      url,
+    };
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+      } else {
+        await navigator.clipboard.writeText(url);
+        toast.success("Tautan disalin ke clipboard!");
+      }
+    } catch (e) {
+      // pengguna membatalkan share — abaikan
+    }
+  };
+
+  const handlePrint = () => window.print();
+
   return (
     <main data-testid={`detail-page-${plant.slug}`}>
       {/* HERO */}
@@ -108,9 +134,36 @@ export default function PlantDetail() {
       </section>
 
       <div className="mx-auto max-w-7xl px-6 py-16 md:px-12">
+        <div
+          data-testid="action-toolbar"
+          className="mb-10 flex flex-wrap items-center gap-3 print:hidden"
+        >
+          <button
+            onClick={handleShare}
+            data-testid="share-button"
+            className="inline-flex items-center gap-2 rounded-full bg-[#2C5E3B] px-5 py-2.5 text-sm font-semibold text-white transition-colors duration-300 hover:bg-[#244d31] dark:bg-[#4C8C4A] dark:hover:bg-[#3f7a3d]"
+          >
+            <Share2 className="h-4 w-4" />
+            Bagikan
+          </button>
+          <button
+            onClick={handlePrint}
+            data-testid="print-button"
+            className="inline-flex items-center gap-2 rounded-full border border-[#D5DCC4] bg-white px-5 py-2.5 text-sm font-semibold text-[#2C5E3B] transition-colors duration-300 hover:bg-[#F0F2E9] dark:border-[#2B3326] dark:bg-[#161C13] dark:text-[#8FCB7E] dark:hover:bg-[#20271D]"
+          >
+            <Printer className="h-4 w-4" />
+            Cetak
+          </button>
+        </div>
+
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-3">
           {/* KONTEN UTAMA */}
           <div className="space-y-16 lg:col-span-2">
+            <section data-testid="section-galeri">
+              <SectionTitle icon={Images}>Galeri Foto</SectionTitle>
+              <Gallery galeri={plant.galeri} aksen={plant.aksen} />
+            </section>
+
             <section data-testid="section-deskripsi">
               <SectionTitle icon={Salad}>Deskripsi Umum</SectionTitle>
               <div className="space-y-4">
