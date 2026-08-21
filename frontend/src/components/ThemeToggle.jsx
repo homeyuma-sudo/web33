@@ -1,12 +1,19 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Moon, Sun } from "lucide-react";
 
 export const ThemeToggle = () => {
   const [dark, setDark] = useState(
     () => typeof document !== "undefined" && document.documentElement.classList.contains("dark")
   );
+  const mounted = useRef(false);
 
   useEffect(() => {
+    // Jangan menulis localStorage saat mount agar preferensi sistem
+    // tetap dihormati pada kunjungan berikutnya; simpan hanya saat pengguna menekan tombol.
+    if (!mounted.current) {
+      mounted.current = true;
+      return;
+    }
     const root = document.documentElement;
     if (dark) {
       root.classList.add("dark");
