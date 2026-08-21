@@ -30,7 +30,9 @@ export const PlantCard = ({ plant, index, wide }) => (
             className="mb-2 inline-block rounded-full px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#1E2923]"
             style={{ backgroundColor: `${plant.aksen}33` }}
           >
-            {plant.slug === "lidah-buaya" || plant.slug === "palem-putri"
+            {plant.slug === "lidah-buaya" ||
+            plant.slug === "palem-putri" ||
+            plant.slug === "palem-rawa"
               ? "Tanaman"
               : "Buah"}
           </span>

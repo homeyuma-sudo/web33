@@ -284,6 +284,53 @@ export const plants = [
       { icon: "CalendarDays", judul: "Pertumbuhan", isi: "Tumbuh relatif lambat, tinggi dewasa dapat mencapai 5–7 meter." },
     ],
   },
+  {
+    slug: "palem-rawa",
+    nama: "Palem Rawa",
+    latin: "Licuala grandis",
+    tagline: "Palem hias berdaun kipas bulat yang eksotis",
+    aksen: "#3E8E5A",
+    image:
+      "https://images.pexels.com/photos/12306309/pexels-photo-12306309.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    galeri: [
+      { url: "https://images.pexels.com/photos/12306309/pexels-photo-12306309.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", caption: "Daun kipas bulat berlipat khas Licuala" },
+      { url: "https://images.unsplash.com/photo-1712490426167-d6dc97dff7f1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwxfHxsaWN1YWxhJTIwZ3JhbmRpcyUyMHJ1ZmZsZWQlMjBmYW4lMjBwYWxtfGVufDB8fHx8MTc4NzMxMDA4Nnww&ixlib=rb-4.1.0&q=85", caption: "Tekstur daun hijau mengilap" },
+      { url: "https://images.pexels.com/photos/14061210/pexels-photo-14061210.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", caption: "Tanaman palem rawa sebagai hiasan" },
+    ],
+    deskripsi: [
+      "Palem rawa (Licuala grandis), dikenal juga sebagai ruffled fan palm atau palem kipas, adalah tanaman palem hias yang berasal dari kepulauan Pasifik (Vanuatu dan sekitarnya). Daya tarik utamanya terletak pada daunnya yang unik: berbentuk kipas bulat hampir sempurna dengan lipatan-lipatan (plisir) rapat dan tepi bergerigi.",
+      "Tanaman ini berbatang tunggal ramping dan tumbuh relatif pendek, menjadikannya favorit sebagai tanaman hias pot maupun taman teduh. Palem rawa menyukai lingkungan lembap dan teduh, serta menghasilkan buah kecil berwarna merah cerah saat dewasa. Bentuk daunnya yang dekoratif membuatnya sering dijadikan focal point dalam lanskap tropis.",
+    ],
+    klasifikasi: {
+      Kingdom: "Plantae",
+      Divisi: "Magnoliophyta",
+      Kelas: "Liliopsida",
+      Ordo: "Arecales",
+      Famili: "Arecaceae",
+      Genus: "Licuala",
+      Spesies: "Licuala grandis",
+    },
+    manfaat: [
+      "Tanaman hias eksotis dengan daun kipas bulat yang dekoratif.",
+      "Cocok untuk taman teduh, teras, maupun tanaman dalam ruangan.",
+      "Membantu menyaring udara dan menambah kesejukan ruangan.",
+      "Menambah nilai estetika dan nuansa tropis pada lanskap.",
+    ],
+    nutrisi: [
+      "Tanaman hias (bukan tanaman konsumsi)",
+      "Menghasilkan oksigen bagi lingkungan",
+      "Buah kecil merah tidak untuk dikonsumsi",
+      "Membantu menjaga kelembapan udara",
+      "Menyerap sebagian polutan dalam ruangan",
+    ],
+    perawatan: [
+      { icon: "Sun", judul: "Cahaya", isi: "Menyukai cahaya teduh hingga naungan parsial; hindari sinar matahari langsung terik." },
+      { icon: "Droplets", judul: "Penyiraman", isi: "Butuh kelembapan tinggi; jaga media tetap lembap namun tidak tergenang." },
+      { icon: "Sprout", judul: "Media Tanam", isi: "Media kaya bahan organik, gembur, dan berdrainase baik, pH 5,5–6,5." },
+      { icon: "Scissors", judul: "Perawatan", isi: "Buang daun tua yang menguning, semprot daun untuk menjaga kelembapan." },
+      { icon: "CalendarDays", judul: "Pertumbuhan", isi: "Tumbuh lambat, tinggi dewasa umumnya hanya sekitar 2–3 meter." },
+    ],
+  },
 ];
 
 export const getPlant = (slug) => plants.find((p) => p.slug === slug);

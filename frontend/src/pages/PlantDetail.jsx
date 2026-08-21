@@ -116,7 +116,9 @@ export default function PlantDetail() {
                 className="mb-3 inline-block rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#1E2923]"
                 style={{ backgroundColor: plant.aksen }}
               >
-                {plant.slug === "lidah-buaya" || plant.slug === "palem-putri"
+                {plant.slug === "lidah-buaya" ||
+                plant.slug === "palem-putri" ||
+                plant.slug === "palem-rawa"
                   ? "Tanaman"
                   : "Buah"}
               </span>
