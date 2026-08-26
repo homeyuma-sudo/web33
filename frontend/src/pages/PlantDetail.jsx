@@ -16,7 +16,7 @@ import {
   Share2,
   Printer,
 } from "lucide-react";
-import { getPlant, plants } from "../data/plants";
+import { getPlant, plants, getKategori } from "../data/plants";
 import { Gallery } from "../components/Gallery";
 
 const iconMap = { Sun, Droplets, Sprout, Scissors, CalendarDays };
@@ -116,12 +116,7 @@ export default function PlantDetail() {
                 className="mb-3 inline-block rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#1E2923]"
                 style={{ backgroundColor: plant.aksen }}
               >
-                {plant.slug === "lidah-buaya" ||
-                plant.slug === "palem-putri" ||
-                plant.slug === "palem-rawa" ||
-                plant.slug === "chinese-violet"
-                  ? "Tanaman"
-                  : "Buah"}
+                {getKategori(plant.slug)}
               </span>
               <h1
                 className="font-heading text-5xl font-semibold tracking-tighter text-white md:text-7xl"

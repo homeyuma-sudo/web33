@@ -43,7 +43,7 @@ export default function Home() {
 
         <div className="mt-12 flex flex-wrap gap-x-10 gap-y-4 border-t border-[#D5DCC4] pt-8 dark:border-[#2B3326]">
           {[
-            { angka: "6", label: "Tanaman & Buah" },
+            { angka: `${plants.length}`, label: "Tanaman & Buah" },
             { angka: "100%", label: "Bahasa Indonesia" },
             { angka: "4", label: "Kategori Informasi" },
           ].map((s) => (

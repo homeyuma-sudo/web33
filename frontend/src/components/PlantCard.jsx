@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import { getKategori } from "../data/plants";
 
 export const PlantCard = ({ plant, index, wide }) => (
   <motion.div
@@ -30,12 +31,7 @@ export const PlantCard = ({ plant, index, wide }) => (
             className="mb-2 inline-block rounded-full px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#1E2923] dark:text-white"
             style={{ backgroundColor: `${plant.aksen}33` }}
           >
-            {plant.slug === "lidah-buaya" ||
-            plant.slug === "palem-putri" ||
-            plant.slug === "palem-rawa" ||
-            plant.slug === "chinese-violet"
-              ? "Tanaman"
-              : "Buah"}
+            {getKategori(plant.slug)}
           </span>
           <h3 className="font-heading text-2xl font-semibold text-[#1E2923] dark:text-[#EDF1E6] md:text-3xl">
             {plant.nama}
