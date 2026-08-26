@@ -118,7 +118,8 @@ export default function PlantDetail() {
               >
                 {plant.slug === "lidah-buaya" ||
                 plant.slug === "palem-putri" ||
-                plant.slug === "palem-rawa"
+                plant.slug === "palem-rawa" ||
+                plant.slug === "chinese-violet"
                   ? "Tanaman"
                   : "Buah"}
               </span>

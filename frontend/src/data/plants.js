@@ -331,6 +331,53 @@ export const plants = [
       { icon: "CalendarDays", judul: "Pertumbuhan", isi: "Tumbuh lambat, tinggi dewasa umumnya hanya sekitar 2–3 meter." },
     ],
   },
+  {
+    slug: "chinese-violet",
+    nama: "Chinese Violet",
+    latin: "Asystasia gangetica",
+    tagline: "Bunga terompet mungil penutup tanah yang memikat",
+    aksen: "#8467C4",
+    image:
+      "https://images.pexels.com/photos/5775202/pexels-photo-5775202.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    galeri: [
+      { url: "https://images.pexels.com/photos/5775202/pexels-photo-5775202.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", caption: "Bunga ungu Asystasia dengan daun beragam" },
+      { url: "https://images.unsplash.com/photo-1652001641991-df9ea09408f3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHw0fHxhc3lzdGFzaWElMjBnYW5nZXRpY2ElMjBjaGluZXNlJTIwdmlvbGV0JTIwZmxvd2VyfGVufDB8fHx8MTc4Nzc0NzYzNXww&ixlib=rb-4.1.0&q=85", caption: "Rumpun bunga ungu bermekaran" },
+      { url: "https://images.unsplash.com/photo-1669588714157-12e562d271ea?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwyfHxhc3lzdGFzaWElMjBnYW5nZXRpY2ElMjBjaGluZXNlJTIwdmlvbGV0JTIwZmxvd2VyfGVufDB8fHx8MTc4Nzc0NzYzNXww&ixlib=rb-4.1.0&q=85", caption: "Bunga terompet putih-lilac yang khas" },
+    ],
+    deskripsi: [
+      "Chinese Violet (Asystasia gangetica) adalah tanaman herba menjalar dari famili Acanthaceae yang tersebar luas di daerah tropis Afrika dan Asia, termasuk Indonesia. Di beberapa daerah dikenal dengan nama 'ara sungsang'. Tanaman ini tumbuh cepat dan menjalar sehingga sering dimanfaatkan sebagai penutup tanah (ground cover).",
+      "Ciri khasnya adalah bunga berbentuk terompet kecil berwarna putih hingga ungu-lilac dengan corak di bagian dalam, serta daun berbentuk hati yang hijau segar. Meski kadang dianggap gulma karena pertumbuhannya yang agresif, Chinese Violet juga populer sebagai tanaman hias dan bunganya menjadi sumber pakan bagi kupu-kupu serta lebah.",
+    ],
+    klasifikasi: {
+      Kingdom: "Plantae",
+      Divisi: "Magnoliophyta",
+      Kelas: "Magnoliopsida",
+      Ordo: "Lamiales",
+      Famili: "Acanthaceae",
+      Genus: "Asystasia",
+      Spesies: "Asystasia gangetica",
+    },
+    manfaat: [
+      "Penutup tanah efektif yang membantu mencegah erosi.",
+      "Tanaman hias dengan bunga mungil yang mempercantik taman.",
+      "Bunganya menarik kupu-kupu dan lebah sebagai polinator.",
+      "Daun mudanya di beberapa daerah dimanfaatkan sebagai sayuran.",
+    ],
+    nutrisi: [
+      "Daun muda mengandung serat pangan",
+      "Sumber vitamin A dan C (pada daun)",
+      "Mengandung kalsium & zat besi",
+      "Rendah kalori",
+      "Umumnya ditanam sebagai hias/penutup tanah",
+    ],
+    perawatan: [
+      { icon: "Sun", judul: "Cahaya", isi: "Toleran dari matahari penuh hingga teduh parsial." },
+      { icon: "Droplets", judul: "Penyiraman", isi: "Penyiraman sedang; cukup tahan kekeringan setelah mapan." },
+      { icon: "Sprout", judul: "Media Tanam", isi: "Adaptif pada hampir semua jenis tanah, ideal tanah subur berdrainase baik." },
+      { icon: "Scissors", judul: "Perawatan", isi: "Pangkas rutin untuk mengendalikan pertumbuhan agar tidak invasif." },
+      { icon: "CalendarDays", judul: "Pertumbuhan", isi: "Tumbuh sangat cepat dan mudah menyebar; berbunga sepanjang tahun." },
+    ],
+  },
 ];
 
 export const getPlant = (slug) => plants.find((p) => p.slug === slug);
